@@ -6,4 +6,4 @@ axios.get("https://en.wikipedia.org/api/rest_v1/page/summary/Paris").then((respo
 });
 
 // Getting information on our location based on the IP.
-axios.get("https://ip-api.com/json").then()
+axios.get("http://ip-api.com/json").then()

@@ -2,7 +2,7 @@ const axios = require("axios");
 
 let randomUser;
 
-axios.get("https://ip-api.com/json")
+axios.get("http://ip-api.com/json")
 .then((response) => {
     randomUser = response.data.results[0];
     return randomUser;
