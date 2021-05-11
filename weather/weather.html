@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Weather API</title></head>
+  <link rel="stylesheet" type="text/css" href="./weather.css"/>
+<body add-the-class="loading"> <!-- add the class "loading" if you want a fade-in effect when the promises resolve. -->
+
+<div class="container">
+    <div class="weather-side">
+      <div class="weather-gradient"></div>
+      <div class="date-container">
+        <h2 class="date-dayname" id="today"></h2><span class="date-day" id="today-date">...</span><i class="location-icon" data-feather="map-pin"></i>
+        <span class="location" id="location">...</span>
+      </div>
+      <div class="weather-container"><i class="weather-icon" id="weather-icon"></i>
+        <h1 class="weather-temp" id="temperature">...</h1>
+        <h3 class="weather-desc" id="weather">...</h3>
+      </div>
+    </div>
+    <div class="info-side">
+      <div class="today-info-container">
+        <div class="today-info">
+          <div class="precipitation"> <span class="title">PRESSURE</span><span class="value" id="pressure">...</span>
+            <div class="clear"></div>
+          </div>
+          <div class="humidity"> <span class="title">HUMIDITY</span><span class="value" id="humidity">...</span>
+            <div class="clear"></div>
+          </div>
+          <div class="wind"> <span class="title">WIND</span><span class="value" id="wind">...</span>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <div class="week-container">
+        <ul class="week-list">
+          <li class="active"><i class="day-icon" id="0-icon"></i><span class="day-name" id="0-name">...</span><span class="day-temp" id="0-temp">...</span></li>
+          <li><i class="day-icon" id="1-icon"></i><span class="day-name" id="1-name">...</span><span class="day-temp" id="1-temp">...</span></li>
+          <li><i class="day-icon" id="2-icon"></i><span class="day-name" id="2-name">...</span><span class="day-temp" id="2-temp">...</span></li>
+          <li><i class="day-icon" id="3-icon"></i><span class="day-name" id="3-name">...</span><span class="day-temp" id="3-temp">...</span></li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+      <!-- <div class="location-container">
+        <button class="location-button"> <i data-feather="map-pin"></i><span>Change location</span></button>
+      </div> -->
+    </div>
+  </div>
+  <div id="wikipedia"></div>
+  <small style="position: fixed; bottom: 10px; right: 10px; color: white;">Thanks to https://codepen.io/Call_in</small>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script type="text/javascript" src="./api.js"></script>
+    <script type="text/javascript" src="./weather.js"></script>
+</body>
+</html>
